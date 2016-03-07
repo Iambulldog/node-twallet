@@ -1,0 +1,23 @@
+{
+  "name": "node-twallet",
+  "version": "1.0.0",
+  "description": "True Wallet API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/sent44/node-twallet.git"
+  },
+  "keywords": [
+    "True",
+    "Wallet"
+  ],
+  "author": "sent44",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sent44/node-twallet/issues"
+  },
+  "homepage": "https://github.com/sent44/node-twallet"
+}
