@@ -13,3 +13,6 @@ npm install git+https://git@github.com/sent44/node-twallet.git
 - tw.login(email,password,callback)
 - tw.log(callback)
 - tw.detail(reportID,callback)
+
+### Example?
+inside /example, It is mostly ready to use
