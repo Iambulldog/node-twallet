@@ -6,7 +6,7 @@ License GIT
 
 ### Install
 ```
-npm install git+https://git@github.com/sent44/node-twallet.git
+npm install node-twallet
 ```
 
 ### Docs
