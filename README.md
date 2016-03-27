@@ -2,7 +2,7 @@
 True Wallet API for Node.JS
 This project is not belong to True Crop. not part of True Crop. Just 3rd API
 
-License GIT
+License MIT
 
 ### Install
 ```
