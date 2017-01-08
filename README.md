@@ -14,7 +14,7 @@ npm install node-twallet
 - tw.log(callback)
 reportID,date,phone,amount,status
 - tw.detail(reportID,callback)
-reportID,date,time,txid,status,signed-amount,total,transfer-amount,fee,phone,owner,signed-phone,operator,type,Favorite
+reportID,date,time,fulldate,txid,status,signed-amount,total,transfer-amount,fee,phone,owner,signed-phone,operator,type,Favorite
 
 ### Example?
 inside /example, It is mostly ready to use
