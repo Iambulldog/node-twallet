@@ -66,7 +66,7 @@ api.prototype.log = function(callback){
     		detail[i]['date'] = raw['data']['activities'][i]['text2En'];
     		detail[i]['phone'] = raw['data']['activities'][i]['text5En'];
     		detail[i]['amount'] = Number(raw['data']['activities'][i]['text4En'].substr(1));
-    		detail[i]['status'] = raw['data']['activities'][i]['text3En']=="debtor"? false:true;
+    		detail[i]['status'] = raw['data']['activities'][i]['text3En'] === "debtor"? false:true;
     	}
     	callback(detail);
 	});
@@ -82,8 +82,9 @@ api.prototype.detail = function(rid,callback){
     	detail['reportID'] = rid;
     	detail['date'] = raw['data']['section4']['column1']['cell1']['value'].split(" ")[0];
     	detail['time'] = raw['data']['section4']['column1']['cell1']['value'].split(" ")[1];
+	detail['fulldate'] = raw['data']['section4']['column1']['cell1']['value'];
     	detail['txid'] = raw['data']['section4']['column2']['cell1']['value'];
-    	detail['status'] = raw['data']['serviceCode']=="debtor"? false:true;
+    	detail['status'] = raw['data']['serviceCode'] === "debtor"? false:true;
     	detail['signed-amount'] = raw['data']['amount'];
     	detail['total'] = Number(raw['data']['section3']['column1']['cell2']['value']);
     	detail['transfer-amount'] = Number(raw['data']['section3']['column1']['cell1']['value']);
@@ -95,7 +96,7 @@ api.prototype.detail = function(rid,callback){
     	detail['signed-phone'] = raw['data']['section2']['column1']['cell1']['value'];
     	detail['operator'] = raw['data']['section2']['column2']['value'];
     	detail['type'] = raw['data']['serviceType'];
-    	detail['Favorite'] = raw['data']['isFavorited'] == "no" ? false:true;
+    	detail['Favorite'] = raw['data']['isFavorited'] === "no" ? false:true;
     	//console.log(detail['owner']);
     	callback(detail);
 	});
