@@ -1,23 +1,87 @@
 {
-  "name": "node-twallet",
-  "version": "1.0.3",
+  "_args": [
+    [
+      {
+        "raw": "node-twallet",
+        "scope": null,
+        "escapedName": "node-twallet",
+        "name": "node-twallet",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\project2"
+    ]
+  ],
+  "_from": "node-twallet@latest",
+  "_id": "node-twallet@1.0.3",
+  "_inCache": true,
+  "_location": "/node-twallet",
+  "_nodeVersion": "5.7.1",
+  "_npmOperationalInternal": {
+    "host": "packages-13-west.internal.npmjs.com",
+    "tmp": "tmp/node-twallet-1.0.3.tgz_1458007787565_0.8150537395849824"
+  },
+  "_npmUser": {
+    "name": "sent44",
+    "email": "sentbysent@gmail.com"
+  },
+  "_npmVersion": "3.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "node-twallet",
+    "scope": null,
+    "escapedName": "node-twallet",
+    "name": "node-twallet",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-twallet/-/node-twallet-1.0.3.tgz",
+  "_shasum": "80f2f93609652b69b4829d1a99c04a59d2dc92fe",
+  "_shrinkwrap": null,
+  "_spec": "node-twallet",
+  "_where": "D:\\project2",
+  "author": {
+    "name": "sent44"
+  },
+  "bugs": {
+    "url": "https://github.com/sent44/node-twallet/issues"
+  },
+  "dependencies": {},
   "description": "True Wallet API",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "80f2f93609652b69b4829d1a99c04a59d2dc92fe",
+    "tarball": "https://registry.npmjs.org/node-twallet/-/node-twallet-1.0.3.tgz"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://git@github.com/sent44/node-twallet.git"
-  },
+  "gitHead": "12f1d18e5c6d411d7a78d5e90c7496e6e6a40a56",
+  "homepage": "https://github.com/sent44/node-twallet",
   "keywords": [
     "True",
     "Wallet"
   ],
-  "author": "sent44",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sent44/node-twallet/issues"
+  "main": "app.js",
+  "maintainers": [
+    {
+      "name": "sent44",
+      "email": "sentbysent@gmail.com"
+    }
+  ],
+  "name": "node-twallet",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/sent44/node-twallet.git"
   },
-  "homepage": "https://github.com/sent44/node-twallet"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.4"
 }
