@@ -11,11 +11,11 @@ function request(path,method,data,content,callback){
 	var content = typeof content !== 'undefined' ?  content : 'application/json';
 	var headers = {};
 	headers['cache-control'] = "no-cache";
-	if(method == "POST"){
+	if(method === "POST"){
 		headers['Content-Type'] = content;
 		//headers['Content-Length'] = Buffer.byteLength(data);
 	}
-	if(cookie!="") headers["Cookie"] = cookie;
+	if(cookie !== "") headers["Cookie"] = cookie;
 	var options = {
   		host: 'wallet.truemoney.com',
   		port: 443,
@@ -24,19 +24,17 @@ function request(path,method,data,content,callback){
   		secureOptions: require('constants').SSL_OP_NO_TLSv1_2, //important
   		headers: headers
 	};
-	//console.log(JSON.stringify(options));
 	var req = https.request(options,function(res){
 		var result = '';
-		var ret = 0;
 		
 		res.on('data',function(chunk){
 			result += chunk;
 		});
 		res.on('end',function(){
-			ret = callback(res.headers,result);
+			callback(res.headers,result);
 		});
 	});
-	if(method == "POST") req.write(data);
+	if(method === "POST") req.write(data);
 	req.end();
 }
 
@@ -57,10 +55,8 @@ api.prototype.log = function(callback){
     		});
     		body = unescape(body);
     		var raw = JSON.parse(body);
-    		//console.log(raw);
     		var detail = {};
     		for(var i=0;i<raw['data']['activities'].length;i++){
-    			//console.log("a");
     			detail[i] = {};
     			detail[i]['reportID'] = raw['data']['activities'][i]['reportID'];
     			detail[i]['date'] = raw['data']['activities'][i]['text2En'];
@@ -97,7 +93,6 @@ api.prototype.detail = function(rid,callback){
     		detail['operator'] = raw['data']['section2']['column2']['value'];
     		detail['type'] = raw['data']['serviceType'];
     		detail['Favorite'] = raw['data']['isFavorited'] === "no" ? false:true;
-    		//console.log(detail['owner']);
     		callback(detail);
 	});
 }
