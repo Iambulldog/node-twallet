@@ -2,6 +2,9 @@ var tw = require ('../app.js');
 
 var database = {};//for test
 var dbcount = 0;
+var email = "user@gmail.com"; // edit here email login
+var pass  = "password"; // edit here password login
+
 function recive(){
 	console.log("Getting new transaction...");
 	var count = 0;
@@ -39,7 +42,7 @@ function loop(){
 }
 
 console.log("Logging in...");
-tw.login('user@email.com','password',function(res){
+tw.login(email,pass,function(res){
 	if(!res) console.log("Login in fail");
 	else{
 		console.log("Login pass");
