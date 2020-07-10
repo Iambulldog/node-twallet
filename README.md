@@ -1,3 +1,7 @@
+True Wallet API system change long ago and also I didn't continue maintain this spagetti code since release.
+There are better and update library out there in wild. Should not check this repo anymore.
+
+
 # True Wallet API (NODE.JS)
 True Wallet API for Node.JS
 This project is not belong to True Crop. not part of True Crop. Just 3rd API
